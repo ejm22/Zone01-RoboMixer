@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomizer</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="module" src="./src/js/stopwatch.js" defer></script>
+    <script type="module" src="./src/js/buttons.js" defer></script>
+    <script type="module" src="./src/js/display.js" defer></script>
+</head>
+<body>
+    <div class="page-container">
+        <label for="language-select" class="language-label">     &nbsp;<i class="fas fa-globe"></i></label>
+        <select id="language-select" class="language-select">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+        </select>
+        <div class="main-container">
+            <div class="grid-box">
+                <div class="stacked-btn">
+                    <button id="start-btn" class="top-btn hover-effect start-state" data-translate="start">DÉMARER&nbsp;<i class="fa fa-play"></i></button>
+                    <button id="reset-btn" class="top-btn hover-effect" data-translate="reset">RÉINITIALISER</button>
+                </div>
+                <div class="flex-center grid" id="mid-col"> 
+                    <a id="stop-watch" class="hover-effect">0:00:00</a>
+                    <div class="dropdown">
+                        <select class="dropdown-btn" id="challenges">
+                            <option value="POLINATOR_ELEMENTARY" data-translate="challenge1">Polinisateur 10-12 ans</option>
+                            <option value="POLINATOR_JUNIOR" data-translate="challenge2">Polinisateur 13-19 ans</option>
+                            <option value="GEMSTONES" data-translate="challenge3">Pierres précieuses</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="timer-container flex-center">
+                    <h2 class="flex-center hidden" id="timer-title" data-translate="timerInput">Entrez Décompte</h2>
+                    <form id="timer-input" name="timer-input" class="hidden">
+                        <input type="text" id="hours" name="hours" placeholder="00">
+                        <p>:</p>
+                        <input type="text" id="minutes" name="minutes" placeholder="00">
+                        <p>:</p>
+                        <input type="text" id="seconds" name="seconds" placeholder="00">
+                        <button type="button" id="timer-btn"><i class="fas fa-clock"></i></button>
+                    </form>
+                    <select name="timer-menu" id="timer-menu">
+                        <option value="stopwatch" data-translate="stopwatch">Chronomètre</option>
+                        <option value="cooldown" data-translate="countdown">Décompte</option>
+                    </select>
+                </div>
+            </div>
+            <div id="mat-container" class="flex-center">
+                <img src="img/zone01-mat-h-2.jpg" alt="Mat Background" id="mat">
+                <div id="random-container"></div>
+            </div>
+            <div class="grid-box flex-center">
+                <img src=img/WRO.png id="img-wro" alt = "logo WRO">
+                <div class="bottom-container"> 
+                    <button id ="clear-btn" class="clear-btn" class="hover-effect" data-translate="clear">EFFACER</button>
+                    <button id="random-btn" class="hover-effect" data-translate="randomize"><i class="fa fa-random"></i> RANDOMISER</button>
+                    <button id ="clear-all-btn" class="clear-btn" class="hover-effect" data-translate="clearAll">EFFACER TOUT</button>
+                </div>
+                <img src=img/Zone01.png id="img-zone01" alt="logo Zone01">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
