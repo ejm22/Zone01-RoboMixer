@@ -1,0 +1,248 @@
+/*Fichier	:	styles.css
+*Version	:	1.0
+*Date		:	16/11/2024
+*Auteur		:	Émile Jacques
+*Description:	Fichier de styles pour la page html complète
+*/
+
+:root {
+    --main-red: #ff3e3b;
+    --hover-red: rgb(255, 0, 0);
+}
+
+.language-label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.language-select {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    appearance: none;
+    background-color: #fff;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+}
+
+.language-select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 140vh;
+    margin: 0 auto;
+    height: 92vh;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
+    box-sizing: border-box;
+
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#img-wro, #img-zone01 {
+    width: 100%;
+    height: auto;
+}
+
+#mat-container {
+    position: relative;
+    width: 80%;
+    height: auto;
+}
+
+#random-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#mat {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 2%;
+}
+
+#timer-menu {
+    background-color: rgb(231, 231, 231);
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.top-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35%;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+.stacked-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+}
+
+#timer-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#timer-input > input {
+    text-align: center;
+    width: 30%;
+
+}
+
+#random-btn {
+    background-color: var(--main-red);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width: 70%;
+    height: 100%;
+}
+
+.clear-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+    height: 100%;
+}
+
+.bottom-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1%;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+#random-btn:hover {
+    background-color: var(--hover-red);
+}
+
+#mid-col {
+    align-self: end;
+}
+
+.start-state {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.stop-state {
+    background-color: red;
+    color: white;
+}
+
+.start-state:hover {
+    background-color: #439b46;
+}
+
+.stop-state:hover {
+    background-color: rgb(179, 1, 1);
+}
+
+h2 {
+    margin: 10px 0px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#stop-watch {
+    font-size: 8vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.timer-container {
+    justify-content: end;
+}
+
+.dropdown-btn {
+    background-color: var(--main-red);
+    color: white;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
