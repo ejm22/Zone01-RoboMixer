@@ -1,6 +1,10 @@
-# Zone01-RoboMixer: Randomizer and Timer for Zone01 Robotics Challenges
+<div align="center">
+  <h1>Zone01-RoboMixer</h1>
+  <p><em>A lightweight app for managing timers and randomizing challenge configurations for <a href="https://www.zone01.ca/index.php/en-ca/pages/zone01-2025-challenges">Zone01 Robotics</a> challenges.</em></p>
+  <br />
+  <a href="https://youtu.be/stdZS92fHIQ"><strong>View Demo »</strong></a>
+</div>
 
-_A lightweight app for managing timers and randomizing challenge configurations for [Zone01 Robotics](https://www.zone01.ca/index.php/en-ca/pages/zone01-2025-challenges)._
 
 ---
 
